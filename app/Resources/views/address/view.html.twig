@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div id="view" data-id="{{ address.id }}">
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Id</div>
+			<div class="view-addressvalue">{{ address.id }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Firstname</div>
+			<div class="view-addressvalue">{{ address.firstname  }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Lastname</div>
+			<div class="view-addressvalue">{{ address.lastname }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Address line 1</div>
+			<div class="view-addressvalue">{{ address.addressLine1 }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Address line 2</div>
+			<div class="view-addressvalue">{{ address.addressLine2 }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">City</div>
+			<div class="view-addressvalue">{{ address.city }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Postcode</div>
+			<div class="view-addressvalue">{{ address.postcode }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Postcode</div>
+			<div class="view-addressvalue">{{ address.postcode }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Telephone Home</div>
+			<div class="view-addressvalue">{{ address.telephoneHome }}</div>
+		</div>
+		<div class="view-addressrow">
+			<div class="view-addresslabel">Telephone Mobile</div>
+			<div class="view-addressvalue">{{ address.telephoneMobile }}</div>
+		</div>
+		<div id="view-actions">
+			<button class="view-actionbtn">Edit</button>
+			<button id="view-deletebtn" class="view-actionbtn">Delete</button>
+		</div>
+	</div>
+{% endblock %}

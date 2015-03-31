@@ -1,0 +1,6 @@
+body {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	width: 900px;
+	margin: 0 auto !important; /* Remove after figuring out how to order css files */
+}

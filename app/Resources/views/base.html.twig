@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% stylesheets 'bundles/app/css/*' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% set baseUrl = app.request.getBaseURL() %}
+        <header>
+            <h1>Mesh Address Book</h1>
+            <nav>
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="{{ baseUrl }}">Home</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{{ baseUrl }}/add">Add Address</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="content" data-url="{{ baseUrl }}">
+            {% block body %}{% endblock %}
+        </div>
+        <footer>
+            <div>Copyright &copy; {{ "now" | date("Y") }}</div>
+        </footer>
+        {% javascripts '@AppBundle/Resources/public/js/*' output='js/compiled/main.js' %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    </body>
+</html>

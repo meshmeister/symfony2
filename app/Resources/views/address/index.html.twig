@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<table class="pure-table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Address line 1</th>
+				<th>Address line 2</th>
+				<th>City</th>
+				<th>Postcode</th>
+				<th>Telephone home</th>
+				<th>Telephone mobile</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% if addresses | length > 0 %}
+			    {% for address in addresses %}
+			        <tr>
+						<td>
+							<a href="{{ app.request.getBaseURL() }}/view/{{ address.id }}">
+								{{ address.id }}
+							</a>
+						</td>
+						<td>{{ address.firstname }}</td>
+						<td>{{ address.lastname }}</td>
+						<td>{{ address.addressLine1 }}</td>
+						<td>{{ address.addressLine2 }}</td>
+						<td>{{ address.city }}</td>
+						<td>{{ address.postcode }}</td>
+						<td>{{ address.telephoneHome }}</td>
+						<td>{{ address.telephoneMobile }}</td>
+			        </tr>
+			    {% endfor %}
+			{% endif %}
+		</tbody>
+	</table>
+{% endblock %}

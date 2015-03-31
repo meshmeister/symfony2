@@ -1,0 +1,78 @@
+<?php
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AppBundle\Entity\Address
+ *
+ * @ORM\Table(name="addresses")
+ * @ORM\Entity
+ */
+class Address
+{
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="int")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    protected $id;
+
+    /**
+     * @var string $firstname
+     *
+     * @ORM\Column(name="firstname", type="string", length=100, nullable=false)
+     */
+    protected $firstname;
+
+    /**
+     * @var string $lastname
+     *
+     * @ORM\Column(name="lastname", type="string", length=100, nullable=false)
+     */
+    protected $lastname;
+
+    /**
+     * @var string $addressLine1
+     *
+     * @ORM\Column(name="address_line_1", type="string", length=250, nullable=false)
+     */
+    protected $addressLine1;
+
+    /**
+     * @var string $addressLine2
+     *
+     * @ORM\Column(name="address_line_2", type="string", length=250)
+     */
+    protected $addressLine2;
+
+    /**
+     * @var string $city
+     *
+     * @ORM\Column(name="city", type="string", length=100, nullable=false)
+     */
+    protected $city;
+
+    /**
+     * @var string $postcode
+     *
+     * @ORM\Column(name="postcode", type="string", length=10, nullable=false)
+     */
+    protected $postcode;
+
+    /**
+     * @var string $telephoneHome
+     *
+     * @ORM\Column(name="telephone_home", type="string", length=15, nullable=false)
+     */
+    protected $telephoneHome;
+
+    /**
+     * @var string $telephoneMobile
+     *
+     * @ORM\Column(name="telephone_mobile", type="string", length=15)
+     */
+    protected $telephoneMobile;
+}

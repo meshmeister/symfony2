@@ -1,0 +1,19 @@
+$(document).ready(function() {
+	
+	$('#view-deletebtn').click(function() {
+
+		var doDelete = confirm("Are you sure you want to delete this address?");
+
+		if (doDelete == true) {
+
+			$.ajax({
+				method: "POST",
+				url: "some.php",
+				data: { name: "John", location: "Boston" }
+			})
+			.done(function( msg ) {
+				alert( "Data Saved: " + msg );
+			});
+		}
+	});
+});

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	{{ form_start(form) }}
+	    {{ form_errors(form) }}
+	    <div>
+	        {{ form_label(form.firstName, 'Firstname') }}
+	        {{ form_errors(form.firstName) }}
+	        {{ form_widget(form.firstName) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.lastName, 'Lasttname') }}
+	        {{ form_errors(form.lastName) }}
+	        {{ form_widget(form.lastName) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.addressLine1, 'Address Line 1') }}
+	        {{ form_errors(form.addressLine1) }}
+	        {{ form_widget(form.addressLine1) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.addressLine2, 'Address Line 2') }}
+	        {{ form_errors(form.addressLine2) }}
+	        {{ form_widget(form.addressLine2) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.city, 'City') }}
+	        {{ form_errors(form.city) }}
+	        {{ form_widget(form.city) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.postcode, 'Postcode') }}
+	        {{ form_errors(form.postcode) }}
+	        {{ form_widget(form.postcode) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.telephoneHome, 'Telephone Home') }}
+	        {{ form_errors(form.telephoneHome) }}
+	        {{ form_widget(form.telephoneHome) }}
+	    </div>
+	    <div>
+	        {{ form_label(form.telephoneMobile, 'Telephone Mobile') }}
+	        {{ form_errors(form.telephoneMobile) }}
+	        {{ form_widget(form.telephoneMobile) }}
+	    </div>
+	    <div>
+	        {{ form_widget(form.save) }}
+	    </div>
+	{{ form_end(form) }}
+{% endblock %}

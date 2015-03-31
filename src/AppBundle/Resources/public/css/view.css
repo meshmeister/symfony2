@@ -1,0 +1,19 @@
+div.view-addressrow {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+div.view-addresslabel {
+    float: left;
+    font-weight: bold;
+    width: 250px;
+}
+
+div.view-addressvalue {
+    float: left;
+}
+
+button.view-actionbtn {
+    padding: 10px 15px;
+    cursor: pointer;
+}
