@@ -24,7 +24,11 @@
 								{{ address.id }}
 							</a>
 						</td>
-						<td>{{ address.firstname }}</td>
+						<td>
+							<a href="{{ app.request.getBaseURL() }}/view/{{ address.id }}">
+								{{ address.firstname }}
+							</a>
+						</td>
 						<td>{{ address.lastname }}</td>
 						<td class="index-addressline1">{{ address.addressLine1 }}</td>
 						<td>{{ address.addressLine2 }}</td>
