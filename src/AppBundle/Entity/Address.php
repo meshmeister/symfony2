@@ -52,14 +52,14 @@ class Address
      * @var string $addressLine2
      *
      * @ORM\Column(name="address_line_2", type="string", length=250, nullable=true)
-     * @Assert\Length(min=8, max=250)
+     * @Assert\Length(max=250)
      */
     protected $addressLine2;
 
     /**
      * @var string $city
      *
-     * @ORM\Column(name="city", type="string", length=100)
+     * @ORM\Column(name="city", type="string", length=100, nullable=true)
      * @Assert\NotBlank()
      * @Assert\Length(min=3, max=100)
      */
@@ -78,7 +78,7 @@ class Address
      * @var string $telephoneHome
      *
      * @ORM\Column(name="telephone_home", type="string", length=15, nullable=true)
-     * @Assert\Length(min=6, max=10)
+     * @Assert\Length(max=15)
      */
     protected $telephoneHome;
 
@@ -86,6 +86,7 @@ class Address
      * @var string $telephoneMobile
      *
      * @ORM\Column(name="telephone_mobile", type="string", length=15, nullable=true)
+     * @Assert\Length(max=15)
      */
     protected $telephoneMobile;
 
