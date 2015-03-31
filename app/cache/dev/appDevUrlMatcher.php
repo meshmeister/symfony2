@@ -35,18 +35,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             if (0 === strpos($pathinfo, '/css/3d14251_part_1_')) {
                 // _assetic_3d14251_0
-                if ($pathinfo === '/css/3d14251_part_1_main_1.css') {
+                if ($pathinfo === '/css/3d14251_part_1_index_1.css') {
                     return array (  '_controller' => 'assetic.controller:render',  'name' => '3d14251',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_3d14251_0',);
                 }
 
                 // _assetic_3d14251_1
-                if ($pathinfo === '/css/3d14251_part_1_pure-min-0.6.0_2.css') {
+                if ($pathinfo === '/css/3d14251_part_1_main_2.css') {
                     return array (  '_controller' => 'assetic.controller:render',  'name' => '3d14251',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_3d14251_1',);
                 }
 
                 // _assetic_3d14251_2
-                if ($pathinfo === '/css/3d14251_part_1_view_3.css') {
+                if ($pathinfo === '/css/3d14251_part_1_pure-min-0.6.0_3.css') {
                     return array (  '_controller' => 'assetic.controller:render',  'name' => '3d14251',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_3d14251_2',);
+                }
+
+                // _assetic_3d14251_3
+                if ($pathinfo === '/css/3d14251_part_1_view_4.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '3d14251',  'pos' => 3,  '_format' => 'css',  '_route' => '_assetic_3d14251_3',);
                 }
 
             }

@@ -39,15 +39,15 @@ class __TwigTemplate_c45cad43dca4f7dd8997f2100ac467a76453858ed8fb5463cb59f675f31
         echo "\t<table class=\"pure-table\">
 \t\t<thead>
 \t\t\t<tr>
-\t\t\t\t<th>Id</th>
-\t\t\t\t<th>Firstname</th>
-\t\t\t\t<th>Lastname</th>
-\t\t\t\t<th>Address line 1</th>
-\t\t\t\t<th>Address line 2</th>
-\t\t\t\t<th>City</th>
-\t\t\t\t<th>Postcode</th>
-\t\t\t\t<th>Telephone home</th>
-\t\t\t\t<th>Telephone mobile</th>
+\t\t\t\t<th class=\"index-tableheading\">Id</th>
+\t\t\t\t<th class=\"index-tableheading\">Firstname</th>
+\t\t\t\t<th class=\"index-tableheading\">Lastname</th>
+\t\t\t\t<th class=\"index-tableheading\">Address line 1</th>
+\t\t\t\t<th class=\"index-tableheading\">Address line 2</th>
+\t\t\t\t<th class=\"index-tableheading\">City</th>
+\t\t\t\t<th class=\"index-tableheading\">Postcode</th>
+\t\t\t\t<th class=\"index-tableheading\">Telephone home</th>
+\t\t\t\t<th class=\"index-tableheading\">Telephone mobile</th>
 \t\t\t</tr>
 \t\t</thead>
 \t\t<tbody>
@@ -82,7 +82,7 @@ class __TwigTemplate_c45cad43dca4f7dd8997f2100ac467a76453858ed8fb5463cb59f675f31
                 // line 28
                 echo twig_escape_filter($this->env, $this->getAttribute($context["address"], "lastname", array()), "html", null, true);
                 echo "</td>
-\t\t\t\t\t\t<td>";
+\t\t\t\t\t\t<td class=\"index-addressline1\">";
                 // line 29
                 echo twig_escape_filter($this->env, $this->getAttribute($context["address"], "addressLine1", array()), "html", null, true);
                 echo "</td>

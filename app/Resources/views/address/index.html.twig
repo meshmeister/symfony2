@@ -4,15 +4,15 @@
 	<table class="pure-table">
 		<thead>
 			<tr>
-				<th>Id</th>
-				<th>Firstname</th>
-				<th>Lastname</th>
-				<th>Address line 1</th>
-				<th>Address line 2</th>
-				<th>City</th>
-				<th>Postcode</th>
-				<th>Telephone home</th>
-				<th>Telephone mobile</th>
+				<th class="index-tableheading">Id</th>
+				<th class="index-tableheading">Firstname</th>
+				<th class="index-tableheading">Lastname</th>
+				<th class="index-tableheading">Address line 1</th>
+				<th class="index-tableheading">Address line 2</th>
+				<th class="index-tableheading">City</th>
+				<th class="index-tableheading">Postcode</th>
+				<th class="index-tableheading">Telephone home</th>
+				<th class="index-tableheading">Telephone mobile</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -26,7 +26,7 @@
 						</td>
 						<td>{{ address.firstname }}</td>
 						<td>{{ address.lastname }}</td>
-						<td>{{ address.addressLine1 }}</td>
+						<td class="index-addressline1">{{ address.addressLine1 }}</td>
 						<td>{{ address.addressLine2 }}</td>
 						<td>{{ address.city }}</td>
 						<td>{{ address.postcode }}</td>

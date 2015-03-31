@@ -43,7 +43,7 @@
 			<div class="view-addressvalue">{{ address.telephoneMobile }}</div>
 		</div>
 		<div id="view-actions">
-			<button class="view-actionbtn">Edit</button>
+			<a class="view-actionbtn" href="{{ app.request.getBaseURL() }}/edit/{{ address.id }}">Edit</a>
 			<button id="view-deletebtn" class="view-actionbtn">Delete</button>
 		</div>
 	</div>
